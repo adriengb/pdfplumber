@@ -228,7 +228,7 @@ def extract_words(chars,
     y_tolerance = decimalize(y_tolerance)
 
     def process_word_chars(chars):
-        x0, top, x1, bottom, fontname, fontsize= objects_to_bbox(chars)
+        x0, top, x1, bottom, fontname, fontsize= objects_to_bbox_with_font(chars)
         result = {
             "x0": x0,
             "x1": x1,
